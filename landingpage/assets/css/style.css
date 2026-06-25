@@ -1,0 +1,123 @@
+
+*{
+    --bg_color:rgb(0,24,0);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg_color);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+}
+.web-logo{
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+.header .desktop-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    & li a{
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid var(--bg_color);
+    }
+    & li a:hover{
+        border-bottom: 1px solid var(--bg_color);
+        transition: all 0.3s ease-in-out;
+    }
+}
+.header .mobile-nav {
+    display: none;
+    position: fixed;
+   
+}
+.header .mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    color: white;
+    background:rgb(17, 156, 17);
+    list-style: none;
+    padding: 30px 15px;
+    position: fixed;
+    height: 100vh;
+    width: 180px;
+    top: 20px;
+    left: 0;
+    & li a{
+        padding: 10px 30px;
+        text-decoration: none;
+        color: white;
+    }
+    & li a:hover{
+        color :black;
+        border-radius: 5px;
+       
+    }
+}
+.three-bar{
+    display: none;
+}
+.phone-btn{
+    width: 40px;
+    height:  40px;
+    border-radius: 50%;
+    border: 1px solid green;
+    color: white;
+    cursor: pointer;
+    background: var(--bg_color);
+    font-size: 20px;
+    
+}
+.msg-btn{
+    padding: 10px 30px;
+    background: green;
+    color: white;
+    border: 1px solid rgb(17, 156, 17);
+    font-size: 16px;
+    border-radius: 30px;
+}
+.action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    & .rotate{
+        rotate: -135deg;
+    
+    }
+}
+@media screen and (max-width:844px){
+    .header .desktop-nav{
+        display: none;
+        }
+ 
+        .three-bar{
+            display: block;
+            cursor: pointer;
+            color:white;
+            font-size: 16px;
+
+        }
+        .msg-btn{
+            font-size: 15px;
+            padding: 10px 20px;
+            & .rotate{
+            margin-left: 2px;
+           }
+    }
+}
