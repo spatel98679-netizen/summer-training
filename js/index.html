@@ -7,9 +7,45 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1 class="xl:text-red-500 lg:text-gray-700 md:text-blue-700 sm:text-yellow-800 text-green-400">
-      Hello world!
-    </h1>
-    
 </body>
+<main class="flex items-center justify-center mx-auto my-20">
+    <section class="w-md h-md border-1 border-red-400 rounded shadow-md p-5">
+    <h1 class="text-blue-700 text-center lg:text-3xl md text-xl text-lg font-bold pb-7">
+      Add Employee
+    </h1>
+    <form action=""class="grid space-y-2">
+        <div class="grid gap-2">
+           <label for="EmployeeName" id="star" class="text-gray-700 text-md font-medium">Employee Name</label>
+                    <input id="EmployeeName" name="name" required maxlength="40" minlength="3" type="text" class="outline-none border-2 border-gray-400 rounded py-1 px-3"
+                        placeholder="Employee Name">
+            
+        </div>
+        <div class="grid gap-2">
+           <label for="EmployeeEmail" class="text-gray-700 text-md font-medium">Employee Email</label>
+                    <input id="EmployeeEmail" type="text" name="email" class="outline-none border-2 border-gray-400 rounded py-1 px-3"
+                        placeholder="Employee Email">
+           
+        </div>
+        <div class="grid gap-2">
+            <label for="Employeesalary" class="text-gray-700 text-md font-medium">Employee salary</label>
+            <input id="Employeesalary" type="text" name="salary" class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee salary">
+            
+        </div>
+        <div class="grid gap-2">
+            <label for="EmployeeExperience" class="text-gray-700 text-md font-medium">Employee experience</label>
+            <input id="EmployeeExperience" type="text"class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee Experience">
+            
+        </div>
+        <div class="grid gap-2">
+            <label for="EmployeeRole" class="text-gray-700 text-md font-medium">Employee role</label>
+            <input id="EmployeeRole" type="text"class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee Role">
+            
+        </div>
+        <button id="submit" type="submit"
+        class="w-2/3 cursor-pointer py-2 text-center bg-blue-600 text-white rounded mx-auto my-5">Submit</button>
+
+            </form>
+    </section>
+</main>
+<script src="./script.js"></script></script>
 </html>
